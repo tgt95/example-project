@@ -33,7 +33,7 @@ var paths = {
 
 /* Compile SCSS */
 gulp.task('scss', () => {
-	return gulp.src(paths.src.scss + '/*.scss')
+	return gulp.src(paths.src.scss + '/style.scss')
 	.pipe(sourcemaps.init())
 	.pipe(sass().on('error', sass.logError))
 	.pipe(postcss([ autoprefixer({
@@ -47,7 +47,7 @@ gulp.task('scss', () => {
 });
 
 gulp.task('scss:watch', ['scss'], () => {
-	gulp.watch(paths.src.scss + '/*.scss', ['scss']);
+	gulp.watch(paths.src.scss + '/**/*', ['scss']);
 });
 
 
@@ -67,7 +67,4 @@ gulp.task('js:watch', ['js'], () => {
 });
 
 /* Watch All */
-gulp.task('watch', ['scss', 'js'], () => {
-	gulp.watch(paths.src.scss + '/*.scss', ['scss']);
-	gulp.watch(paths.src.js + '/main.js', ['js']);
-});
+gulp.task('watch', ['scss:watch', 'js:watch']);
