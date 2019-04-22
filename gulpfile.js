@@ -1,5 +1,6 @@
 var autoprefixer = require('autoprefixer');
 var gulp     	 = require('gulp');
+var concat 		 = require('gulp-concat');
 var cleanCss 	 = require('gulp-clean-css');
 var postcss      = require('gulp-postcss');
 var sass 		 = require('gulp-sass');
@@ -7,6 +8,9 @@ var sourcemaps   = require('gulp-sourcemaps');
 var rename 		 = require('gulp-rename');
 var uglify 		 = require('gulp-uglify');
 
+function handleError(err) {
+    console.log(err.toString());
+}
 
 /**
 1. Compile SCSS:
@@ -28,7 +32,8 @@ var paths = {
 	dist: {
 		css : 'assets/css',
 		js : 'assets/js'
-	}
+	},
+	node_modules: 'node_modules'
 }
 
 /* Compile SCSS */
@@ -55,11 +60,18 @@ gulp.task('scss:watch', ['scss'], () => {
 gulp.task('js', () => {
 	return gulp.src([
             // 'Your URL',
+            // paths.node_modules + '/jquery/dist/jquery.min.js',
             paths.src.js + '/main.js'
 		])
-	.pipe(uglify())
-	.pipe(rename({ suffix: '.min' }))
+	.pipe(sourcemaps.init())
+	.pipe(concat('style.js'))
 	.pipe(gulp.dest(paths.dist.js))
+
+	.pipe(rename('style.min.js'))
+	.pipe(uglify())
+	.on('error', handleError)
+	.pipe(sourcemaps.write('./'))
+	.pipe(gulp.dest(paths.dist.js));
 });
 
 gulp.task('js:watch', ['js'], () => {
