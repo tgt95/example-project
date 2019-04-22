@@ -1,0 +1,79 @@
+mkdir -p src/js
+cd src/js
+touch main.js
+cd ../../
+
+mkdir -p src/scss
+cd src/scss
+touch style.scss
+touch _variables.scss
+touch _common.scss
+cd ../../
+
+mkdir -p src/scss/mixins
+mkdir -p src/scss/utilities
+mkdir -p src/scss/components
+mkdir -p src/scss/fonts
+mkdir -p src/scss/section
+
+cd src/scss/mixins
+touch main.scss
+cd ../../../
+
+
+cd src/scss/utilities
+touch _align.scss
+touch _background.scss
+touch _borders.scss
+touch _clearfix.scss
+touch _display.scss
+touch _embed.scss
+touch _flex.scss
+touch _float.scss
+touch _position.scss
+touch _shadows.scss
+touch _sizing.scss
+touch _spacing.scss
+touch _text.scss
+touch _visibility.scss
+touch main.scss
+cd ../../../
+
+
+cd src/scss/components
+touch _images.scss
+touch _grid.scss
+touch _tables.scss
+touch _forms.scss
+touch _buttons.scss
+touch _dropdown.scss
+touch _button-group.scss
+touch _input-group.scss
+touch _custom-forms.scss
+touch _nav.scss
+touch _navbar.scss
+touch _card.scss
+touch _breadcrumb.scss
+touch _pagination.scss
+touch _badge.scss
+touch _alert.scss
+touch _progress.scss
+touch _modal.scss
+touch _tooltip.scss
+touch _popover.scss
+touch _carousel.scss
+touch main.scss
+cd ../../../
+
+
+cd src/scss/fonts
+touch main.scss
+cd ../../../
+
+
+cd src/scss/section
+touch _header.scss
+touch _footer.scss
+touch _common.scss
+touch main.scss
+cd ../../../
