@@ -1,3 +1,7 @@
+mkdir -p src/html
+mkdir -p src/fonts
+
+
 mkdir -p src/js
 cd src/js
 touch main.js
@@ -77,3 +81,12 @@ touch _footer.scss
 touch _common.scss
 touch main.scss
 cd ../../../
+
+
+
+mkdir -p include/common
+cd include/common
+touch var.php
+touch header.php
+touch footer.php
+cd ../../
