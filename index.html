@@ -1,62 +1,25 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<meta charset="utf-8" />
-	<title>Example Project</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<!-- App favicon -->
-	<link rel="shortcut icon" href="favicon.ico">
-	<!-- App css -->
-	<link href="assets/css/style.min.css" rel="stylesheet" type="text/css" />
-</head>
-
-<style>
-.demo-background{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	padding: 0 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-image: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/arches.png);
-	background-size: 10%;
-	transition: background 2s ease;
-	/*transition: background 2s cubic-bezier(.4, 0, 1, 1);*/
-}
-.demo-background h1{
-	/*max-width: 500px;*/
-	text-align: center;
-	font-weight: 100; 
-	font-size: 50px; 
-	color: #5c6a77;
-	letter-spacing: 5px;
-}
-</style>
-<script>
-	// Your Code
-	function getRandomInt(min, max) {
-		min = Math.ceil(min);
-		max = Math.floor(max);
-		return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
-	}
-
-	var demoBackground = document.querySelector('.demo-background');
-	setTimeout(function(){ demoBackground.style.backgroundSize = 9 + '%'; }, 500);
-	setInterval(function(){
-		var random = getRandomInt(9,12);
-		demoBackground.style.backgroundSize = random + '%';
-	}, 3000);
-</script>
-
-<body>
-	<div class="demo-background">
-		<h1>Example Project includes Build System (Gulp)</h1>
-	</div>
-</body>
-<script src="assets/js/main.min.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Example Project</title>
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+  </head>
+  <body>
+    <!-- Content Page-->
+    <div class="content-page">
+      <!-- Header-->
+      <!-- Footer-->
+    </div>
+    <!-- Javascript-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/style.min.js"></script>
+    <script></script>
+  </body>
 </html>

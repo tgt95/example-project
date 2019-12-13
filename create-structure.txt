@@ -1,4 +1,24 @@
 mkdir -p src/html
+cd src/html
+touch index.pug
+
+mkdir -p common/layout
+mkdir -p common/section
+
+cd common
+touch var.pug
+touch layout.pug
+
+cd section
+touch footer.pug
+touch header.pug
+
+cd ../
+cd layout
+touch modal.pug
+cd ../../../../
+
+
 mkdir -p src/fonts
 
 

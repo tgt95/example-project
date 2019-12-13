@@ -58,7 +58,7 @@ const html = ()=> {
 	}}))
 	.pipe(pug({
 		doctype: 'html',
-		pretty: false
+		pretty: true
 	}))
 	.pipe(dest('./'));
 }
@@ -158,8 +158,8 @@ const jsWatch = ()=> {
 // If any change, run scss and js tasks simultaneously
 const watchTask = ()=> {
     watch([paths.src.scss + '/**/*', paths.src.js, paths.src.html], 
-        parallel(scss, js));    
-        // parallel(scss, js, html));    
+        // parallel(scss, js));    
+        parallel(scss, js, html));    
 }
 
 // Export the default Gulp task so it can be run
@@ -175,6 +175,6 @@ exports.scssWatch = scssWatch;
 exports.jsWatch = jsWatch;
 
 exports.default = series(
-    parallel(scss, js), 
+    parallel(scss, js, html), 
     watchTask
 );
