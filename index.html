@@ -1,4 +1,54 @@
-<!DOCTYPE html>
+
+<style>
+  body{
+  	color: #454545;
+  	font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif !important;
+  }
+  .content-page{
+  
+  }
+  .flex-center{
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  }
+  .wrapper{
+  	width: 100%;
+  	max-width: 414px;
+  	transition: all .6s ease;
+  	margin-bottom: 32px;
+  }
+  .item{
+  	height: 20px;
+  	border-radius: 30px;
+  	background-color: #ccc;
+  	//- color: white;
+  	margin-bottom: 4px;
+  	position: relative;
+  	padding-left: 8px;
+  	transition: all .3s ease;
+  	font-weight: 400;
+  }
+  .number{
+  	//- position: absolute;
+  }
+  .title{
+  	font-size: 128px;
+  	font-weight: 100;
+  	margin-bottom: 32px;
+  }
+</style>
+<script>
+  let size = [1920, 1440, 1024, 991, 768, 576, 414, 320];
+  setInterval(()=> {
+  	let rand = size[Math.floor(Math.random() * size.length)];
+  	console.log(rand);
+  	document.querySelectorAll('.wrapper')[0].style.maxWidth = rand + 'px';
+  	document.querySelectorAll('.wrapper-title.title')[0].innerHTML = rand + 'px';
+  }, 1000)
+  
+  
+</script><!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -13,6 +63,85 @@
     <!-- Content Page-->
     <div class="content-page">
       <!-- Header-->
+      <div class="title">Spacer</div>
+      <div class="wrapper">
+        <div class="item" style="width: 8%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">8</span><span>1</span></div>
+        </div>
+        <div class="item" style="width: 16%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">16</span><span>2</span></div>
+        </div>
+        <div class="item" style="width: 24%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">24</span><span>3</span></div>
+        </div>
+        <div class="item" style="width: 32%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">32</span><span>4</span></div>
+        </div>
+        <div class="item" style="width: 40%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">40</span><span>5</span></div>
+        </div>
+        <div class="item" style="width: 48%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">48</span><span>6</span></div>
+        </div>
+        <div class="item" style="width: 56%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">56</span><span>7</span></div>
+        </div>
+        <div class="item" style="width: 64%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">64</span><span>8</span></div>
+        </div>
+        <div class="item" style="width: 72%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">72</span><span>9</span></div>
+        </div>
+        <div class="item" style="width: 80%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">80</span><span>10</span></div>
+        </div>
+        <div class="item" style="width: 88%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">88</span><span>11</span></div>
+        </div>
+        <div class="item" style="width: 96%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">96</span><span>12</span></div>
+        </div>
+        <div class="item" style="width: 104%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">104</span><span>13</span></div>
+        </div>
+        <div class="item" style="width: 112%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">112</span><span>14</span></div>
+        </div>
+        <div class="item" style="width: 120%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">120</span><span>15</span></div>
+        </div>
+        <div class="item" style="width: 128%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">128</span><span>16</span></div>
+        </div>
+        <div class="item" style="width: 136%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">136</span><span>17</span></div>
+        </div>
+        <div class="item" style="width: 144%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">144</span><span>18</span></div>
+        </div>
+        <div class="item" style="width: 152%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">152</span><span>19</span></div>
+        </div>
+        <div class="item" style="width: 160%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">160</span><span>20</span></div>
+        </div>
+        <div class="item" style="width: 168%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">168</span><span>21</span></div>
+        </div>
+        <div class="item" style="width: 176%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">176</span><span>22</span></div>
+        </div>
+        <div class="item" style="width: 184%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">184</span><span>23</span></div>
+        </div>
+        <div class="item" style="width: 192%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">192</span><span>24</span></div>
+        </div>
+        <div class="item" style="width: 200%;">
+          <div class="number"><span style="width: 100%; max-width: 30px; display: inline-block;">200</span><span>25</span></div>
+        </div>
+      </div>
+      <div class="wrapper-title title">768px</div>
       <!-- Footer-->
     </div>
     <!-- Javascript-->
