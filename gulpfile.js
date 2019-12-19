@@ -58,7 +58,7 @@ const html = ()=> {
 	}}))
 	.pipe(pug({
 		doctype: 'html',
-		pretty: true
+		pretty: false
 	}))
 	.pipe(dest('./'));
 }

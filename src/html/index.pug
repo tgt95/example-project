@@ -11,63 +11,7 @@ block custom
 			'content' : [
 			],
 		};
-	style.
-		body{
-			color: #454545;
-			font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif !important;
-		}
-		.content-page{
-
-		}
-		.flex-center{
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-		.wrapper{
-			width: 100%;
-			max-width: 414px;
-			transition: all .6s ease;
-			margin-bottom: 32px;
-		}
-		.item{
-			height: 20px;
-			border-radius: 30px;
-			background-color: #ccc;
-			//- color: white;
-			margin-bottom: 4px;
-			position: relative;
-			padding-left: 8px;
-			transition: all .3s ease;
-			font-weight: 400;
-		}
-		.number{
-			//- position: absolute;
-		}
-		.title{
-			font-size: 128px;
-			font-weight: 100;
-			margin-bottom: 32px;
-		}
-	script.
-		let size = [1920, 1440, 1024, 991, 768, 576, 414, 320];
-		setInterval(()=> {
-			let rand = size[Math.floor(Math.random() * size.length)];
-			console.log(rand);
-			document.querySelectorAll('.wrapper')[0].style.maxWidth = rand + 'px';
-			document.querySelectorAll('.wrapper-title.title')[0].innerHTML = rand + 'px';
-		}, 1000)
-
 
 block content
-	.title Spacer
-	.wrapper
-		- for (let i = 1; i <= 25; i++)
-			.item(style=`width: ${i*8}%;`)
-				.number
-					span(style="width: 100%; max-width: 30px; display: inline-block;") #{i*8}
-					span
-						| #{i}
-	.wrapper-title.title 768px
-
+	
 block script
