@@ -52,7 +52,7 @@ a{
 }
 .progress-bar{
 	height: 16px;
-	background-color: var(--neutral-4);
+	background-color: var(--neutral-3);
 	/* border: 1px solid var(--neutral-4); */
 	border-radius: var(--border-theme);
 	transition: all .3s ease;
@@ -79,7 +79,8 @@ a{
 //- }
 .item:hover .progress-bar{
 	transform: scale(0.8);
-	background-color: var(--neutral-2);
+	//- background-color: var(--neutral-2);
+	background-color: rgb(200, 205, 212);
 }
 .item:hover .content span{
 	font-size: var(--h2);
@@ -110,7 +111,7 @@ a{
 .section{
 	margin-bottom: 64px;
 }
-.section:first-child{
+.section:first-child, .section:nth-child(3){
 	transition: all 3s ease;
 }
 .section:nth-child(2){
@@ -167,14 +168,11 @@ a{
 .go-to-url:hover::before{
 	width: 60%;
 }
-</style><body style="padding: 32px;"><div class="linear-border"></div><div class="row" style="position: relative;"><div class="col-12 section"><div class="page-title">The linear scale</div><div class="box"><div class="item"><div class="progress-bar" style="width: 8%;"></div><div class="content"><span>2</span></div></div><div class="item"><div class="progress-bar" style="width: 16%;"></div><div class="content"><span>4</span></div></div><div class="item"><div class="progress-bar" style="width: 24%;"></div><div class="content"><span>6</span></div></div><div class="item"><div class="progress-bar" style="width: 32%;"></div><div class="content"><span>8</span></div></div><div class="item"><div class="progress-bar" style="width: 40%;"></div><div class="content"><span>10</span></div></div><div class="item"><div class="progress-bar" style="width: 48%;"></div><div class="content"><span>12</span></div></div><div class="item"><div class="progress-bar" style="width: 56%;"></div><div class="content"><span>14</span></div></div><div class="item"><div class="progress-bar" style="width: 64%;"></div><div class="content"><span>16</span></div></div></div></div><div class="col-12 section"><div class="page-title">The golden ratio, <br> modular scale</div><div class="box"><div class="item"><div class="progress-bar" style="width: 2%;"></div><div class="content"><span>2</span></div></div><div class="item"><div class="progress-bar" style="width: 4%;"></div><div class="content"><span>4</span></div></div><div class="item"><div class="progress-bar" style="width: 8%;"></div><div class="content"><span>8</span></div></div><div class="item"><div class="progress-bar" style="width: 16%;"></div><div class="content"><span>16</span></div></div><div class="item"><div class="progress-bar" style="width: 32%;"></div><div class="content"><span>32</span></div></div><div class="item"><div class="progress-bar" style="width: 64%;"></div><div class="content"><span>64</span></div></div><div class="item"><div class="progress-bar" style="width: 128%;"></div><div class="content"><span>128</span></div></div><div class="item"><div class="progress-bar" style="width: 256%;"></div><div class="content"><span>256</span></div></div></div></div></div><div class="bg-text">Space in <br> <u>Design Systems</u><br><a class="go-to-url" href="https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62" style="font-size: var(--h1)">Read more</a></div></body><script>const doAnimation = ()=> {
-	let section_1 = document.querySelectorAll('.section')[0],
-		section_2 = document.querySelectorAll('.section')[1],
-		linear_border = document.querySelectorAll('.linear-border')[0];
-	section_1.style.marginLeft == '' ? section_1.style.marginLeft = '1%' : section_1.style.marginLeft = '';
-	section_2.style.marginLeft == '' ? section_2.style.marginLeft = '6%' : section_2.style.marginLeft = '';
-	//- linear_border.style.borderTopRightRadius == '100%' ? linear_border.style.borderTopRightRadius = '100%' : linear_border.style.borderTopRightRadius = '100%';
-	//- console.log(linear_border.style.borderTopRightRadius);
+</style><body style="padding: 32px;"><div class="linear-border"></div><div class="row" style="position: relative;"><div class="col-12 section"><div class="page-title">The linear scale</div><div class="box"><div class="item"><div class="progress-bar" style="width: 8px;"></div><div class="content"><span>2</span></div></div><div class="item"><div class="progress-bar" style="width: 16px;"></div><div class="content"><span>4</span></div></div><div class="item"><div class="progress-bar" style="width: 24px;"></div><div class="content"><span>6</span></div></div><div class="item"><div class="progress-bar" style="width: 32px;"></div><div class="content"><span>8</span></div></div><div class="item"><div class="progress-bar" style="width: 40px;"></div><div class="content"><span>10</span></div></div><div class="item"><div class="progress-bar" style="width: 48px;"></div><div class="content"><span>12</span></div></div><div class="item"><div class="progress-bar" style="width: 56px;"></div><div class="content"><span>14</span></div></div><div class="item"><div class="progress-bar" style="width: 64px;"></div><div class="content"><span>16</span></div></div></div></div><div class="col-12 section"><div class="page-title">The golden ratio, <br> modular scale</div><div class="box"><div class="item"><div class="progress-bar" style="width: 2px;"></div><div class="content"><span>2</span></div></div><div class="item"><div class="progress-bar" style="width: 4px;"></div><div class="content"><span>4</span></div></div><div class="item"><div class="progress-bar" style="width: 8px;"></div><div class="content"><span>8</span></div></div><div class="item"><div class="progress-bar" style="width: 16px;"></div><div class="content"><span>16</span></div></div><div class="item"><div class="progress-bar" style="width: 32px;"></div><div class="content"><span>32</span></div></div><div class="item"><div class="progress-bar" style="width: 64px;"></div><div class="content"><span>64</span></div></div><div class="item"><div class="progress-bar" style="width: 128px;"></div><div class="content"><span>128</span></div></div><div class="item"><div class="progress-bar" style="width: 256px;"></div><div class="content"><span>256</span></div></div></div></div><div class="col-12 section"><div class="page-title">The custom scale</div><div class="box"><div class="item" data-width="2"><div class="progress-bar" style="width: 2px;"></div><div class="content"><span>2</span></div></div><div class="item" data-width="4"><div class="progress-bar" style="width: 4px;"></div><div class="content"><span>4</span></div></div><div class="item" data-width="8"><div class="progress-bar" style="width: 8px;"></div><div class="content"><span>8</span></div></div><div class="item" data-width="12"><div class="progress-bar" style="width: 12px;"></div><div class="content"><span>12</span></div></div><div class="item" data-width="16"><div class="progress-bar" style="width: 16px;"></div><div class="content"><span>16</span></div></div><div class="item" data-width="20"><div class="progress-bar" style="width: 20px;"></div><div class="content"><span>20</span></div></div><div class="item" data-width="24"><div class="progress-bar" style="width: 24px;"></div><div class="content"><span>24</span></div></div><div class="item" data-width="32"><div class="progress-bar" style="width: 32px;"></div><div class="content"><span>32</span></div></div><div class="item" data-width="40"><div class="progress-bar" style="width: 40px;"></div><div class="content"><span>40</span></div></div><div class="item" data-width="48"><div class="progress-bar" style="width: 48px;"></div><div class="content"><span>48</span></div></div><div class="item" data-width="60"><div class="progress-bar" style="width: 60px;"></div><div class="content"><span>60</span></div></div><div class="item" data-width="100"><div class="progress-bar" style="width: 100px;"></div><div class="content"><span>100</span></div></div><div class="item" data-width="120"><div class="progress-bar" style="width: 120px;"></div><div class="content"><span>120</span></div></div><div class="item" data-width="160"><div class="progress-bar" style="width: 160px;"></div><div class="content"><span>160</span></div></div><div class="item" data-width="200"><div class="progress-bar" style="width: 200px;"></div><div class="content"><span>200</span></div></div><div class="item" data-width="240"><div class="progress-bar" style="width: 240px;"></div><div class="content"><span>240</span></div></div><div class="item" data-width="320"><div class="progress-bar" style="width: 320px;"></div><div class="content"><span>320</span></div></div><div class="item" data-width="400"><div class="progress-bar" style="width: 400px;"></div><div class="content"><span>400</span></div></div><div class="item" data-width="600"><div class="progress-bar" style="width: 600px;"></div><div class="content"><span>600</span></div></div></div></div></div><div class="bg-text">Space in <br> <u>Design Systems</u><br><a class="go-to-url" href="https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62" style="font-size: var(--h1)">Read more</a></div></body><script>const doAnimation = ()=> {
+	let padding = [1,6,2];
+	document.querySelectorAll('.section').forEach((el, i)=> {
+		el.style.marginLeft == '' ? el.style.marginLeft = `${padding[i]}%` : el.style.marginLeft = '';
+	})
 }
 doAnimation();
 
@@ -182,4 +180,18 @@ setInterval(()=> {
 	doAnimation();
 }, 1000)
 
-console.log('A small project used Pug template engine and Vanilla Javascript!');</script></html>
+console.log('A small project used Pug template engine and Vanilla Javascript!');
+
+let temp_1 = 0;
+for (let i = 1; i <= 8; i++){
+	if (temp_1 < 3){
+		temp_1 = temp_1 + 2
+	}
+	if (temp_1 > 2 && temp_1 < 20){
+		temp_1 = temp_1 + 4
+	}
+	if (temp_1 > 20){
+		temp_1 = temp_1 + 8
+		console.log(temp_1)
+	}
+}</script></html>

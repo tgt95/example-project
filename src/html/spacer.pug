@@ -64,7 +64,7 @@ html
 		}
 		.progress-bar{
 			height: 16px;
-			background-color: var(--neutral-4);
+			background-color: var(--neutral-3);
 			/* border: 1px solid var(--neutral-4); */
 			border-radius: var(--border-theme);
 			transition: all .3s ease;
@@ -91,7 +91,8 @@ html
 		//- }
 		.item:hover .progress-bar{
 			transform: scale(0.8);
-			background-color: var(--neutral-2);
+			//- background-color: var(--neutral-2);
+			background-color: rgb(200, 205, 212);
 		}
 		.item:hover .content span{
 			font-size: var(--h2);
@@ -122,7 +123,7 @@ html
 		.section{
 			margin-bottom: 64px;
 		}
-		.section:first-child{
+		.section:first-child, .section:nth-child(3){
 			transition: all 3s ease;
 		}
 		.section:nth-child(2){
@@ -189,7 +190,7 @@ html
 				.box
 					- for (let i = 1; i <= 8; i++)
 						.item
-							.progress-bar(style=`width: ${i*8}%;`)
+							.progress-bar(style=`width: ${i*8}px;`)
 							.content
 								span= i*2
 			.col-12.section
@@ -199,9 +200,38 @@ html
 					- for (let i = 1; i <= 8; i++)
 						- temp = temp == undefined ? 2 : temp + temp
 						.item
-							.progress-bar(style=`width: ${temp}%;`)
+							.progress-bar(style=`width: ${temp}px;`)
 							.content
 								span= temp
+			.col-12.section
+				.page-title The custom scale
+				.box
+					- let temp_1 = 0;
+					- for (let i = 1; i <= 19; i++)
+						-
+							if (i < 3)
+								temp_1 = temp_1 + 2
+							if (i >= 3 && i < 8)
+								temp_1 = temp_1 + 4
+							if (i >= 8 && i < 11)
+								temp_1 = temp_1 + 8
+							if (i === 11)
+								temp_1 = temp_1 + 12
+							if (i === 12)
+								temp_1 = temp_1 + 40
+							if (i === 13)
+								temp_1 = temp_1 + 20
+							if (i >= 14 && i < 17)
+								temp_1 = temp_1 + 40
+							if (i >= 17 && i < 19)
+								temp_1 = temp_1 + 80
+							if (i === 19)
+								temp_1 = temp_1 + 200
+
+						.item(data-width=temp_1)
+							.progress-bar(style=`width: ${temp_1}px;`)
+							.content
+								span= temp_1
 		.bg-text Space in <br> 
 			u Design Systems
 			| <br>
@@ -209,13 +239,10 @@ html
 
 	script.
 		const doAnimation = ()=> {
-			let section_1 = document.querySelectorAll('.section')[0],
-				section_2 = document.querySelectorAll('.section')[1],
-				linear_border = document.querySelectorAll('.linear-border')[0];
-			section_1.style.marginLeft == '' ? section_1.style.marginLeft = '1%' : section_1.style.marginLeft = '';
-			section_2.style.marginLeft == '' ? section_2.style.marginLeft = '6%' : section_2.style.marginLeft = '';
-			//- linear_border.style.borderTopRightRadius == '100%' ? linear_border.style.borderTopRightRadius = '100%' : linear_border.style.borderTopRightRadius = '100%';
-			//- console.log(linear_border.style.borderTopRightRadius);
+			let padding = [1,6,2];
+			document.querySelectorAll('.section').forEach((el, i)=> {
+				el.style.marginLeft == '' ? el.style.marginLeft = `${padding[i]}%` : el.style.marginLeft = '';
+			})
 		}
 		doAnimation();
 		
@@ -224,3 +251,17 @@ html
 		}, 1000)
 
 		console.log('A small project used Pug template engine and Vanilla Javascript!');
+
+		let temp_1 = 0;
+		for (let i = 1; i <= 8; i++){
+			if (temp_1 < 3){
+				temp_1 = temp_1 + 2
+			}
+			if (temp_1 > 2 && temp_1 < 20){
+				temp_1 = temp_1 + 4
+			}
+			if (temp_1 > 20){
+				temp_1 = temp_1 + 8
+				console.log(temp_1)
+			}
+		}
