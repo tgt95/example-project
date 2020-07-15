@@ -72,7 +72,8 @@ const fonts = ()=> {
 		.pipe(iconfontCss({
 			cssClass: 			fontName, // The name that the generated font will have
 			fontName: 			fontName, // The name that the generated font will have
-			path: 				'node_modules/gulp-iconfont-css/templates/_icons.scss', // The path to the template that will be used to create the SASS/LESS/CSS file
+			path: 				paths.src.fonts+ '/template.scss', // The path to the template that will be used to create the SASS/LESS/CSS file
+			// path: 				'node_modules/gulp-iconfont-css/templates/_icons.scss', // The path to the template that will be used to create the SASS/LESS/CSS file
 			targetPath: 		'../../../'+ paths.src.scss +'/fonts/_customicon.scss', // The path where the file will be generated
 			fontPath: 			'../fonts/icons/' // The path to the icon font file
 		}))

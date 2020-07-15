@@ -3,8 +3,18 @@ extends common/layout.pug
 block meta-title
 	title Example Project
 
+block page-css
+	link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap")
+	style(type="text/css").
+		body{
+			background: black;
+		}
+
 block custom
 	-
+		var icon = [
+			'customicon-action-down', 'customicon-action-left', 'customicon-action-right', 'customicon-action-top', 'customicon-adjustment', 'customicon-arrow-down', 'customicon-arrow-left', 'customicon-arrow-right', 'customicon-arrow-up', 'customicon-book', 'customicon-business', 'customicon-calendar', 'customicon-camera', 'customicon-check', 'customicon-chevron-down', 'customicon-chevron-left', 'customicon-chevron-right', 'customicon-chevron-up', 'customicon-clear', 'customicon-close', 'customicon-comment', 'customicon-contact', 'customicon-control-minus', 'customicon-control-plus', 'customicon-copy', 'customicon-cut', 'customicon-delete', 'customicon-document', 'customicon-dot', 'customicon-download', 'customicon-edit-file', 'customicon-error', 'customicon-expand', 'customicon-favorite', 'customicon-file', 'customicon-filter', 'customicon-fire', 'customicon-folder', 'customicon-group', 'customicon-history', 'customicon-home', 'customicon-image-multiple', 'customicon-image-single', 'customicon-information-copy', 'customicon-information', 'customicon-location', 'customicon-lock', 'customicon-mail', 'customicon-map', 'customicon-media', 'customicon-mobile', 'customicon-more-horizontal', 'customicon-more-vertical', 'customicon-mouse', 'customicon-nav', 'customicon-notifications-off', 'customicon-notifications-on', 'customicon-password-hide', 'customicon-password-show', 'customicon-paste', 'customicon-pause', 'customicon-phone', 'customicon-play', 'customicon-print', 'customicon-profile', 'customicon-record-audio', 'customicon-record-video', 'customicon-save', 'customicon-search', 'customicon-settings', 'customicon-share', 'customicon-sign-out', 'customicon-sort-alphabet-down', 'customicon-sort-alphabet-up', 'customicon-sort-down', 'customicon-sort-latest-down', 'customicon-sort-latest-up', 'customicon-sort-up', 'customicon-subscribe', 'customicon-tag', 'customicon-task-done', 'customicon-task-list', 'customicon-text-area', 'customicon-time', 'customicon-unlock', 'customicon-upload', 'customicon-user-admin', 'customicon-user-author', 'customicon-user-banned', 'customicon-user-settings', 'customicon-volume-down', 'customicon-volume-mute', 'customicon-volume-up', 'customicon-wallet', 'customicon-write'
+		]
 		var data = {
 			'title' : [
 			],
@@ -13,5 +23,10 @@ block custom
 		};
 
 block content
+	.container.my-5.text-center
+		.h1(style="color: white;") BigIn Design System Icon
+		.mt-5
+			each className in icon
+				i(class=className style="font-size: 48px; color: #f3f3f3; display: inline-block; margin-right: 16px; margin-bottom: 16px;")
 	
 block script

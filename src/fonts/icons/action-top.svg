@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/action top</title>
+    <g id="icon/action-top" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M25.0652759,12.4888792 L37.7793741,26.5753016 C38.073542,26.9012211 38.073542,27.4296409 37.7793741,27.7555604 C37.6381098,27.9120724 37.4465142,28 37.2467362,28 L10.7532638,28 C10.3372477,28 10,27.6263507 10,27.165431 C10,26.9440896 10.0793615,26.7318137 10.2206259,26.5753016 L22.9347241,12.4888792 C23.5230597,11.8370403 24.4769403,11.8370403 25.0652759,12.4888792 Z" id="Color" fill="#333333"></path>
+    </g>
+</svg>

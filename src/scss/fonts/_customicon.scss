@@ -1,0 +1,602 @@
+@font-face {
+	font-family: "customicon";
+	src: url('../fonts/icons/customicon.eot');
+	src: url('../fonts/icons/customicon.eot?#iefix') format('eot'),
+		url('../fonts/icons/customicon.woff2') format('woff2'),
+		url('../fonts/icons/customicon.woff') format('woff'),
+		url('../fonts/icons/customicon.ttf') format('truetype'),
+		url('../fonts/icons/customicon.svg#customicon') format('svg');
+}
+
+@mixin customicon-styles {
+	font-family: "customicon";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+
+    display: inline-block;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+%customicon {
+	@include customicon-styles;
+}
+
+.customicon-action-down:before {
+	content:'\E001';
+}
+.customicon-action-left:before {
+	content:'\E002';
+}
+.customicon-action-right:before {
+	content:'\E003';
+}
+.customicon-action-top:before {
+	content:'\E004';
+}
+.customicon-adjustment:before {
+	content:'\E005';
+}
+.customicon-arrow-down:before {
+	content:'\E006';
+}
+.customicon-arrow-left:before {
+	content:'\E007';
+}
+.customicon-arrow-right:before {
+	content:'\E008';
+}
+.customicon-arrow-up:before {
+	content:'\E009';
+}
+.customicon-book:before {
+	content:'\E00A';
+}
+.customicon-business:before {
+	content:'\E00B';
+}
+.customicon-calendar:before {
+	content:'\E00C';
+}
+.customicon-camera:before {
+	content:'\E00D';
+}
+.customicon-check:before {
+	content:'\E00E';
+}
+.customicon-chevron-down:before {
+	content:'\E00F';
+}
+.customicon-chevron-left:before {
+	content:'\E010';
+}
+.customicon-chevron-right:before {
+	content:'\E011';
+}
+.customicon-chevron-up:before {
+	content:'\E012';
+}
+.customicon-clear:before {
+	content:'\E013';
+}
+.customicon-close:before {
+	content:'\E014';
+}
+.customicon-comment:before {
+	content:'\E015';
+}
+.customicon-contact:before {
+	content:'\E016';
+}
+.customicon-control-minus:before {
+	content:'\E017';
+}
+.customicon-control-plus:before {
+	content:'\E018';
+}
+.customicon-copy:before {
+	content:'\E019';
+}
+.customicon-cut:before {
+	content:'\E01A';
+}
+.customicon-delete:before {
+	content:'\E01B';
+}
+.customicon-document:before {
+	content:'\E01C';
+}
+.customicon-dot:before {
+	content:'\E01D';
+}
+.customicon-download:before {
+	content:'\E01E';
+}
+.customicon-edit-file:before {
+	content:'\E01F';
+}
+.customicon-error:before {
+	content:'\E020';
+}
+.customicon-expand:before {
+	content:'\E021';
+}
+.customicon-favorite:before {
+	content:'\E022';
+}
+.customicon-file:before {
+	content:'\E023';
+}
+.customicon-filter:before {
+	content:'\E024';
+}
+.customicon-fire:before {
+	content:'\E025';
+}
+.customicon-folder:before {
+	content:'\E026';
+}
+.customicon-group:before {
+	content:'\E027';
+}
+.customicon-history:before {
+	content:'\E028';
+}
+.customicon-home:before {
+	content:'\E029';
+}
+.customicon-image-multiple:before {
+	content:'\E02A';
+}
+.customicon-image-single:before {
+	content:'\E02B';
+}
+.customicon-information-copy:before {
+	content:'\E02C';
+}
+.customicon-information:before {
+	content:'\E02D';
+}
+.customicon-location:before {
+	content:'\E02E';
+}
+.customicon-lock:before {
+	content:'\E02F';
+}
+.customicon-mail:before {
+	content:'\E030';
+}
+.customicon-map:before {
+	content:'\E031';
+}
+.customicon-media:before {
+	content:'\E032';
+}
+.customicon-mobile:before {
+	content:'\E033';
+}
+.customicon-more-horizontal:before {
+	content:'\E034';
+}
+.customicon-more-vertical:before {
+	content:'\E035';
+}
+.customicon-mouse:before {
+	content:'\E036';
+}
+.customicon-nav:before {
+	content:'\E037';
+}
+.customicon-notifications-off:before {
+	content:'\E038';
+}
+.customicon-notifications-on:before {
+	content:'\E039';
+}
+.customicon-password-hide:before {
+	content:'\E03A';
+}
+.customicon-password-show:before {
+	content:'\E03B';
+}
+.customicon-paste:before {
+	content:'\E03C';
+}
+.customicon-pause:before {
+	content:'\E03D';
+}
+.customicon-phone:before {
+	content:'\E03E';
+}
+.customicon-play:before {
+	content:'\E03F';
+}
+.customicon-print:before {
+	content:'\E040';
+}
+.customicon-profile:before {
+	content:'\E041';
+}
+.customicon-record-audio:before {
+	content:'\E042';
+}
+.customicon-record-video:before {
+	content:'\E043';
+}
+.customicon-save:before {
+	content:'\E044';
+}
+.customicon-search:before {
+	content:'\E045';
+}
+.customicon-settings:before {
+	content:'\E046';
+}
+.customicon-share:before {
+	content:'\E047';
+}
+.customicon-sign-out:before {
+	content:'\E048';
+}
+.customicon-sort-alphabet-down:before {
+	content:'\E049';
+}
+.customicon-sort-alphabet-up:before {
+	content:'\E04A';
+}
+.customicon-sort-down:before {
+	content:'\E04B';
+}
+.customicon-sort-latest-down:before {
+	content:'\E04C';
+}
+.customicon-sort-latest-up:before {
+	content:'\E04D';
+}
+.customicon-sort-up:before {
+	content:'\E04E';
+}
+.customicon-subscribe:before {
+	content:'\E04F';
+}
+.customicon-tag:before {
+	content:'\E050';
+}
+.customicon-task-done:before {
+	content:'\E051';
+}
+.customicon-task-list:before {
+	content:'\E052';
+}
+.customicon-text-area:before {
+	content:'\E053';
+}
+.customicon-time:before {
+	content:'\E054';
+}
+.customicon-unlock:before {
+	content:'\E055';
+}
+.customicon-upload:before {
+	content:'\E056';
+}
+.customicon-user-admin:before {
+	content:'\E057';
+}
+.customicon-user-author:before {
+	content:'\E058';
+}
+.customicon-user-banned:before {
+	content:'\E059';
+}
+.customicon-user-settings:before {
+	content:'\E05A';
+}
+.customicon-volume-down:before {
+	content:'\E05B';
+}
+.customicon-volume-mute:before {
+	content:'\E05C';
+}
+.customicon-volume-up:before {
+	content:'\E05D';
+}
+.customicon-wallet:before {
+	content:'\E05E';
+}
+.customicon-write:before {
+	content:'\E05F';
+}
+
+
+.customicon-action-down {
+	@extend %customicon;
+}
+.customicon-action-left {
+	@extend %customicon;
+}
+.customicon-action-right {
+	@extend %customicon;
+}
+.customicon-action-top {
+	@extend %customicon;
+}
+.customicon-adjustment {
+	@extend %customicon;
+}
+.customicon-arrow-down {
+	@extend %customicon;
+}
+.customicon-arrow-left {
+	@extend %customicon;
+}
+.customicon-arrow-right {
+	@extend %customicon;
+}
+.customicon-arrow-up {
+	@extend %customicon;
+}
+.customicon-book {
+	@extend %customicon;
+}
+.customicon-business {
+	@extend %customicon;
+}
+.customicon-calendar {
+	@extend %customicon;
+}
+.customicon-camera {
+	@extend %customicon;
+}
+.customicon-check {
+	@extend %customicon;
+}
+.customicon-chevron-down {
+	@extend %customicon;
+}
+.customicon-chevron-left {
+	@extend %customicon;
+}
+.customicon-chevron-right {
+	@extend %customicon;
+}
+.customicon-chevron-up {
+	@extend %customicon;
+}
+.customicon-clear {
+	@extend %customicon;
+}
+.customicon-close {
+	@extend %customicon;
+}
+.customicon-comment {
+	@extend %customicon;
+}
+.customicon-contact {
+	@extend %customicon;
+}
+.customicon-control-minus {
+	@extend %customicon;
+}
+.customicon-control-plus {
+	@extend %customicon;
+}
+.customicon-copy {
+	@extend %customicon;
+}
+.customicon-cut {
+	@extend %customicon;
+}
+.customicon-delete {
+	@extend %customicon;
+}
+.customicon-document {
+	@extend %customicon;
+}
+.customicon-dot {
+	@extend %customicon;
+}
+.customicon-download {
+	@extend %customicon;
+}
+.customicon-edit-file {
+	@extend %customicon;
+}
+.customicon-error {
+	@extend %customicon;
+}
+.customicon-expand {
+	@extend %customicon;
+}
+.customicon-favorite {
+	@extend %customicon;
+}
+.customicon-file {
+	@extend %customicon;
+}
+.customicon-filter {
+	@extend %customicon;
+}
+.customicon-fire {
+	@extend %customicon;
+}
+.customicon-folder {
+	@extend %customicon;
+}
+.customicon-group {
+	@extend %customicon;
+}
+.customicon-history {
+	@extend %customicon;
+}
+.customicon-home {
+	@extend %customicon;
+}
+.customicon-image-multiple {
+	@extend %customicon;
+}
+.customicon-image-single {
+	@extend %customicon;
+}
+.customicon-information-copy {
+	@extend %customicon;
+}
+.customicon-information {
+	@extend %customicon;
+}
+.customicon-location {
+	@extend %customicon;
+}
+.customicon-lock {
+	@extend %customicon;
+}
+.customicon-mail {
+	@extend %customicon;
+}
+.customicon-map {
+	@extend %customicon;
+}
+.customicon-media {
+	@extend %customicon;
+}
+.customicon-mobile {
+	@extend %customicon;
+}
+.customicon-more-horizontal {
+	@extend %customicon;
+}
+.customicon-more-vertical {
+	@extend %customicon;
+}
+.customicon-mouse {
+	@extend %customicon;
+}
+.customicon-nav {
+	@extend %customicon;
+}
+.customicon-notifications-off {
+	@extend %customicon;
+}
+.customicon-notifications-on {
+	@extend %customicon;
+}
+.customicon-password-hide {
+	@extend %customicon;
+}
+.customicon-password-show {
+	@extend %customicon;
+}
+.customicon-paste {
+	@extend %customicon;
+}
+.customicon-pause {
+	@extend %customicon;
+}
+.customicon-phone {
+	@extend %customicon;
+}
+.customicon-play {
+	@extend %customicon;
+}
+.customicon-print {
+	@extend %customicon;
+}
+.customicon-profile {
+	@extend %customicon;
+}
+.customicon-record-audio {
+	@extend %customicon;
+}
+.customicon-record-video {
+	@extend %customicon;
+}
+.customicon-save {
+	@extend %customicon;
+}
+.customicon-search {
+	@extend %customicon;
+}
+.customicon-settings {
+	@extend %customicon;
+}
+.customicon-share {
+	@extend %customicon;
+}
+.customicon-sign-out {
+	@extend %customicon;
+}
+.customicon-sort-alphabet-down {
+	@extend %customicon;
+}
+.customicon-sort-alphabet-up {
+	@extend %customicon;
+}
+.customicon-sort-down {
+	@extend %customicon;
+}
+.customicon-sort-latest-down {
+	@extend %customicon;
+}
+.customicon-sort-latest-up {
+	@extend %customicon;
+}
+.customicon-sort-up {
+	@extend %customicon;
+}
+.customicon-subscribe {
+	@extend %customicon;
+}
+.customicon-tag {
+	@extend %customicon;
+}
+.customicon-task-done {
+	@extend %customicon;
+}
+.customicon-task-list {
+	@extend %customicon;
+}
+.customicon-text-area {
+	@extend %customicon;
+}
+.customicon-time {
+	@extend %customicon;
+}
+.customicon-unlock {
+	@extend %customicon;
+}
+.customicon-upload {
+	@extend %customicon;
+}
+.customicon-user-admin {
+	@extend %customicon;
+}
+.customicon-user-author {
+	@extend %customicon;
+}
+.customicon-user-banned {
+	@extend %customicon;
+}
+.customicon-user-settings {
+	@extend %customicon;
+}
+.customicon-volume-down {
+	@extend %customicon;
+}
+.customicon-volume-mute {
+	@extend %customicon;
+}
+.customicon-volume-up {
+	@extend %customicon;
+}
+.customicon-wallet {
+	@extend %customicon;
+}
+.customicon-write {
+	@extend %customicon;
+}
