@@ -342,3 +342,22 @@ Variables
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 14px; }
+
+.demo-icon {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0; }
+  .demo-icon > li {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 8px;
+    border-radius: 12px;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease; }
+    .demo-icon > li i {
+      font-size: 48px;
+      color: #f3f3f3; }
+    .demo-icon > li:hover {
+      background: rgba(255, 255, 255, 0.1); }

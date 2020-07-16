@@ -28,12 +28,10 @@
 	@include <%= cssClass%>-styles;
 }
 
-<% _.each(glyphs, function(glyph) { %>.<%= cssClass%>-<%= glyph.fileName %>:before {
-	content:'\<%= glyph.codePoint %>';
-}
-<% }); %>
-
-<% _.each(glyphs, function(glyph) { %>.<%= cssClass%>-<%= glyph.fileName %> {
-	@extend %customicon;
+<% _.each(glyphs, function(glyph) { %>.<%= cssClass%>-<%= glyph.fileName %>{
+	@extend %<%= cssClass%>;
+	&:before {
+		content:'\<%= glyph.codePoint %>';
+	}
 }
 <% }); %>

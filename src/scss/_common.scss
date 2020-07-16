@@ -2,3 +2,29 @@ body{
 	font-family: $font-primary;
 	font-size: $font-size-base;
 }
+
+.demo-icon{
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	>li{
+		display: inline-flex;
+		padding: 8px;
+		border-radius: 12px;
+		transition: background .3s ease;
+		&:not(:last-child){
+			// margin-right: 16px; 
+			// margin-bottom: 16px;
+		}
+		i{
+			font-size: 48px; 
+			color: #f3f3f3;
+		}
+		&:hover{
+			background: rgba(white, .1);
+			i{
+				// color: #242424;
+			}
+		}
+	}
+}
